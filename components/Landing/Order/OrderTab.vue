@@ -67,6 +67,7 @@ export default {
   position: relative;
   width: 113px;
   height: 40px;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +81,9 @@ export default {
 .tab {
   color: #9b9b9b;
   background-color: #f5f4f4;
+}
+.tab:hover {
+  color: #36bbd9;
 }
 .tab--selected {
   color: #36bbd9;
@@ -101,5 +105,22 @@ export default {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 400px) {
+  .order-tab {
+    width: 358px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tab, .tab--selected {
+    width: 88px;
+    height: 36px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 </style>

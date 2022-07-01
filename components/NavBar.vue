@@ -82,6 +82,9 @@ export default {
   font-weight: 500;
   color: #808080;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .link > img {
   width: 16px;
