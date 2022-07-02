@@ -2,6 +2,7 @@
   <div id="app">
     <NavBar />
     <LandingOrder />
+    <LandingCategory />
   </div>
 </template>
 
@@ -10,12 +11,14 @@ import { mapState, mapMutations } from 'vuex'
 import axios from 'axios'
 import NavBar from '~/components/NavBar.vue'
 import LandingOrder from '~/components/Landing/LandingOrder.vue'
+import LandingCategory from '~/components/Landing/LandingCategory.vue'
 
 export default {
   name: 'IndexPage',
   components: {
     NavBar,
-    LandingOrder
+    LandingOrder,
+    LandingCategory
   },
   computed: {
     ...mapState('Order', ['countyList'])
@@ -46,7 +49,7 @@ export default {
         // console.log(countySet)
         this.SET_ORDER({ key: 'countyList', value: countySet })
       } catch (error) {
-        console.log('GetCountyList: ', error)
+        // console.log('GetCountyList: ', error)
       }
     }
   }
