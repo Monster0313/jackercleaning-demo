@@ -3,6 +3,8 @@
     <NavBar />
     <LandingOrder />
     <LandingCategory />
+    <LandingNotService />
+    <LandingRanking />
   </div>
 </template>
 
@@ -12,13 +14,17 @@ import axios from 'axios'
 import NavBar from '~/components/NavBar.vue'
 import LandingOrder from '~/components/Landing/LandingOrder.vue'
 import LandingCategory from '~/components/Landing/LandingCategory.vue'
+import LandingNotService from '~/components/Landing/LandingNotService.vue'
+import LandingRanking from '~/components/Landing/LandingRanking.vue'
 
 export default {
   name: 'IndexPage',
   components: {
     NavBar,
     LandingOrder,
-    LandingCategory
+    LandingCategory,
+    LandingNotService,
+    LandingRanking
   },
   computed: {
     ...mapState('Order', ['countyList'])
@@ -55,3 +61,9 @@ export default {
   }
 }
 </script>
+
+<style scope>
+#app {
+  overflow: hidden;
+}
+</style>

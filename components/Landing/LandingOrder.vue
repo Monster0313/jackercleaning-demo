@@ -64,7 +64,7 @@ export default {
   }
   .slogan-mobile {
     width: 100%;
-    margin: 0 0 56px 16px;
+    padding: 0 0 56px 16px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -73,6 +73,7 @@ export default {
     font-size: 32px;
     line-height: 46px;
     color: #4a4a4a;
+    box-sizing: border-box;
   }
   .slogan-mobile > p {
     margin: 0;

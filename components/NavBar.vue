@@ -116,8 +116,7 @@ export default {
     width: 100vw;
     height: 45px;
     background-color: #fff;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 0 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
