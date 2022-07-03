@@ -28,4 +28,10 @@ export default {
   justify-content: space-between;
   align-content: stretch;
 }
+@media screen and (max-width: 400px) {
+  .category-clip {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 </style>

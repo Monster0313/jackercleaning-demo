@@ -167,4 +167,17 @@ export default {
 .clip {
   margin: 0 24px 0 0;
 }
+@media screen and (max-width: 400px) {
+  .category-group {
+    height: 100%;
+    padding: 40px 0 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .clip {
+    margin: 0;
+  }
+}
 </style>

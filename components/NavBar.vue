@@ -65,6 +65,7 @@ export default {
   align-items: center;
   box-shadow: 0 1px 4px 0 rgba(128, 128, 128, 0.2);
   box-sizing: border-box;
+  z-index: 1000;
 }
 .logo {
   height: 50px;

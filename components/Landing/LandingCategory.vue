@@ -11,6 +11,9 @@
       時數計算教學
     </button>
     <CategoryGroup />
+    <button class="order-button">
+      開始預約 >
+    </button>
   </div>
 </template>
 
@@ -38,13 +41,14 @@ export default {
   align-items: center;
 }
 .landing-category > .title {
+  margin: 0 0 7px 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 .landing-category > .title > p {
-  margin: 0 0 7px 8px;
+  margin: 0 0 0 8px;
   font-weight: 500;
   font-size: 32px;
   line-height: 46px;
@@ -71,5 +75,34 @@ export default {
   border: 1px solid #36bbd9;
   border-radius: 4px;
   cursor: pointer;
+}
+.order-button {
+  width: 300px;
+  height: 36px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  background: #36bbd9;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+
+  .landing-category > .title > img {
+    width: 22px;
+  }
+  .landing-category > .title > p {
+    margin: 0 0 0 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .landing-category > .description {
+    width: 343px;
+  }
 }
 </style>

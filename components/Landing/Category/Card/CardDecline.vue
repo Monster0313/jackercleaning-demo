@@ -66,7 +66,7 @@ export default {
 }
 .description {
   width: 280px;
-  margin: -8px 0 0 15px;
+  margin: -8px 0 0 20px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
