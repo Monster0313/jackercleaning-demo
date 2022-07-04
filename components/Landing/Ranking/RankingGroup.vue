@@ -82,6 +82,7 @@ export default {
     width: 100%;
     padding: 0 0 0 16px;
     overflow: hidden;
+    cursor: grabbing;
   }
 }
 </style>
