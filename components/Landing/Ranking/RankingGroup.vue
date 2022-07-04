@@ -74,6 +74,7 @@ export default {
 .ranking-group {
   width: 600px;
   overflow: hidden;
+  cursor: grabbing;
 }
 
 @media screen and (max-width: 400px) {
